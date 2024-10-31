@@ -26,10 +26,35 @@ main {
   }
 }
 
+.home p {
+  font-size: 24px;
+  margin: 56px 0;
+}
+
+.home p a {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .home p {
+    font-size: 20px;
+    margin: 32px 0;
+  }
+}
+
 .details_container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .details_container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+  }
 }
 
 figure {
@@ -39,9 +64,22 @@ figure {
   row-gap: 8px;
 }
 
+@media (max-width: 768px) {
+  figure {
+    row-gap: 0px;
+  }
+}
+
 figure div {
   width: 384px;
   height: 218px;
+}
+
+@media (max-width: 768px) {
+  figure div {
+    width: 284px;
+    height: 161px;
+  }
 }
 
 figure div .img_fit_container {
@@ -59,13 +97,23 @@ figure .img_esiee {
 }
 
 figcaption {
+  font-family: "Lexend_medium", sans-serif;
+  font-size: 20px;
   color: var(--text-purple);
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  figcaption {
+    font-size: 18px;
+  }
 }
 
 .CTA_devWeb {
   display: block;
   width: fit-content;
+  font-family: "Lexend_bold", sans-serif;
+  font-size: 24px;
   text-align: center;
   border: 3px solid var(--main-blue);
   border-radius: 5px;
@@ -74,6 +122,12 @@ figcaption {
   padding: 16px;
   margin: auto;
   transition: all ease-in-out 0.1s;
+}
+
+@media (max-width: 768px) {
+  .CTA_devWeb {
+    font-size: 18px;
+  }
 }
 
 .CTA_devWeb:hover {

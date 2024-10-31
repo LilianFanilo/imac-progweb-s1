@@ -6,6 +6,12 @@
   row-gap: 56px;
 }
 
+@media (max-width: 768px) {
+  .web main {
+    row-gap: 32px;
+  }
+}
+
 .web h1 {
   font-size: 56px;
   text-align: center;
@@ -34,6 +40,7 @@
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
+  column-gap: 16px;
 }
 
 .web main div:nth-child(even) {
@@ -42,9 +49,11 @@
 
 .web main div:nth-child(odd) {
   flex-direction: row;
+  text-align: right;
 }
 
 .web p {
+  font-family: "Lexend_medium", sans-serif;
   font-size: 36px;
 }
 

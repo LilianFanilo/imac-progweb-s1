@@ -7,9 +7,30 @@
 }
 
 @font-face {
+  font-family: Lexend_light;
+  src: url("/assets/fonts/Lexend_standard/lexend_light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
   font-family: Lexend;
   src: url("/assets/fonts/Lexend_standard/lexend_regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lexend_medium;
+  src: url("/assets/fonts/Lexend_standard/lexend_medium.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Lexend_bold;
+  src: url("/assets/fonts/Lexend_standard/lexend_bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -19,7 +40,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: var(--text-blue);
 }
 
 body {
@@ -29,13 +49,33 @@ body {
 h1 {
   text-transform: uppercase;
   font-weight: 400;
+  color: var(--text-blue);
+}
+
+h2 {
+  font-family: "Lexend_bold", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  margin: 56px 0;
+  color: var(--text-blue);
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+    margin: 32px 0;
+  }
 }
 
 p {
-  font-size: 24px;
+  color: var(--text-blue);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+strong {
+  font-family: "Lexend_bold", sans-serif;
 }
