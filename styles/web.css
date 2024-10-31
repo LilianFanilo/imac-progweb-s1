@@ -1,0 +1,63 @@
+/* Styles for even divs */
+
+.web main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 56px;
+}
+
+.web h1 {
+  font-size: 56px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .web h1 {
+    font-size: 40px;
+    text-align: left;
+  }
+}
+
+.web main img {
+  width: 256px;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 768px) {
+  .web main img {
+    width: 116px;
+  }
+}
+
+.web main div {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.web main div:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.web main div:nth-child(odd) {
+  flex-direction: row;
+}
+
+.web p {
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .web p {
+    font-size: 18px;
+  }
+}
+
+p .underline {
+  text-decoration: dotted underline;
+}
+
+p .highlight {
+  color: var(--text-highlight);
+}

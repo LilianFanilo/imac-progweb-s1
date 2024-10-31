@@ -1,0 +1,40 @@
+nav {
+  display: flex;
+  background-color: var(--main-blue);
+  height: 100px;
+  align-items: center;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1344px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  width: 25%;
+}
+
+nav li a {
+  color: var(--main-white);
+  text-decoration: underline;
+  transition: all ease-in-out 0.1s;
+}
+
+nav li a:hover {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    width: 60%;
+  }
+}

@@ -1,0 +1,11 @@
+footer {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+  height: 302px;
+}
+
+footer > div {
+  display: flex;
+  max-width: 1344px;
+  margin: 0 auto;
+}

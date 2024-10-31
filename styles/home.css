@@ -1,0 +1,82 @@
+main {
+  width: 100%;
+  max-width: 1344px;
+  margin: 56px auto;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 32px auto;
+    padding: 0 16px;
+  }
+}
+
+.home h1,
+.home p {
+  max-width: 1072px;
+}
+
+.home h1 {
+  font-size: 64px;
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 48px;
+  }
+}
+
+.details_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8px;
+}
+
+figure div {
+  width: 384px;
+  height: 218px;
+}
+
+figure div .img_fit_container {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+figure .img_esiee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #153e5d;
+  border-radius: 5px;
+}
+
+figcaption {
+  color: var(--text-purple);
+  text-align: center;
+}
+
+.CTA_devWeb {
+  display: block;
+  width: fit-content;
+  text-align: center;
+  border: 3px solid var(--main-blue);
+  border-radius: 5px;
+  background-color: var(--main-white);
+  color: var(--main-blue);
+  padding: 16px;
+  margin: auto;
+  transition: all ease-in-out 0.1s;
+}
+
+.CTA_devWeb:hover {
+  background-color: var(--main-blue);
+  color: var(--main-white);
+}
